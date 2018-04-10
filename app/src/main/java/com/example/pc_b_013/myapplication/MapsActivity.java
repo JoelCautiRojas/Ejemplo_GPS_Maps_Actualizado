@@ -29,13 +29,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     GoogleMap mMap;
     GoogleApiClient clienteGPS;
     TextView t_latitud, t_longitud;
-    double lat;
-    double lon;
+    double lat = 0.0;
+    double lon = 0.0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_maps);
         t_latitud = findViewById(R.id.latitud);
         t_longitud = findViewById(R.id.longitud);
 
@@ -45,7 +45,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .addApi(LocationServices.API)
                 .build();
 
-        setContentView(R.layout.activity_maps);
+
     }
 
 

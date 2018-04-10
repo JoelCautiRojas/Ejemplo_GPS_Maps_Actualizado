@@ -6,16 +6,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
-        android:id="@+id/latitud"
+        android:id="@+id/longitud"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="40dp" />
 
     <TextView
-        android:id="@+id/longitud"
+        android:id="@+id/latitud"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="40dp" />
 
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:map="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/map"
